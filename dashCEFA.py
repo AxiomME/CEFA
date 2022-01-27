@@ -458,13 +458,13 @@ def main():
 		
 	elif topic=='Display Sankey Graphs':
 	
-		title1.title('Visuals for questions related to cultures (questions C3 to C17)')
+		title1.title('Visuals for questions related to cultures (Some of questions B3 to B17)')
 		st.title('')
 		
 		
 		crops=[i for i in data if i[0]=='B' and i[:3] not in ['B1_','B20','B19']]
-		st.write(sankey)	
-		st.write(crops)
+		#st.write(sankey)	
+		#st.write(crops)
 		
 		data_all=data[sankey+['productivity_increased']].copy()
 		
