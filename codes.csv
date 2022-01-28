@@ -57,3 +57,7 @@ type_benef	to code	GAP	1	green
 type_benef	to code	Hygiene Kit	0	blue
 canalworkingwell		Yes		green
 canalworkingwell		No		red
+increasedarea		Yes		green
+increasedarea		No		red
+receive_agrisupport		Yes		green
+receive_agrisupport		No		red

@@ -218,7 +218,7 @@ def pourcent2(abscisse,ordonnée,dataf,legendtitle='',xaxis=''):
     
 	fig.update_layout(barmode='relative', \
                   xaxis={'title':xaxis,'title_font':{'size':18}},\
-                  yaxis={'title':'Pourcentage','title_font':{'size':18}})
+                  yaxis={'title':'Percentages','title_font':{'size':18}})
 	fig.update_layout(legend_title=legendtitle,legend=dict(orientation='h',
         yanchor="bottom",
         y=1.02,
@@ -409,7 +409,8 @@ def main():
 					
 					
 					fig.update_layout(showlegend=False)
-					fig.update_yaxes(range=[-0.1, df[quest.iloc[i]['variable_y']].max()+1],title=quest.iloc[i]['ytitle'])
+					fig.update_yaxes(range=[-0.1, df[quest.iloc[i]['variable_y']].max()+1])
+					fig.update_layout(yaxis={'title':quest.iloc[i]['ytitle'],'title_font':{'size':18}})	
 					k+=1
 					
 					
